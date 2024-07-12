@@ -1,3 +1,14 @@
+# Cooper Telegram Sniper
+The Cooper Telegram Sniper is a bot that snipes tokens in desired telegram channels.
+
+📡 Custom RPC: Our bot allows you to set an RPC of your choosing, or use our default one
+
+⚡ Lightning-Fast Sniping: With our bot, it's possible to snipe coins in lightening-fast speed 
+
+📴 AFK Mode: Our bot can be used while AFK. Whether you're sleeping, eating, out or busy, our bot will snipe coins as long as it's running.
+
+💸 Auto Sell: Our bot allows you to set a specific amount of time that you would like it to hold coins for & will auto sell once that time has ended.
+
 # How to Use the Solana Cooper Bot
 
 This guide walks you through setting up and using the Solana Cooper Bot for Telegram token sniping.
@@ -87,8 +98,27 @@ The bot also automatically generates a `transaction_stats.json` file to track tr
 > You can get one by applying for beta in the [form](https://docs.google.com/forms/d/e/1FAIpQLSeqrZpPLQ-VkIqqZmx8fzyw4DPdZW02Sqil66P30ad3BEIX-A/viewform) after joining our [discord server](https://dsc.gg/cooperbot).
 
 # Socials
-[![Follow Cooper Bot](https://img.shields.io/twitter/url/https/twitter.com/CooperBotSOL.svg?style=social&label=Follow%20%40bukotsunikki)](https://x.com/CooperBotSOL)
+[![](https://img.shields.io/twitter/url/https/twitter.com/CooperBotSOL.svg?style=social&label=@CooperBotSol)](https://x.com/CooperBotSOL)
 
 [![](https://dcbadge.limes.pink/api/server/https://discord.com/invite/EQCbewNZex)]((https://discord.com/invite/EQCbewNZex))
 
-# Team members
+
+
+# Team members 
+> **MD20M**
+> 
+> ![](https://dcbadge.limes.pink/api/shield/301340957025107972)
+>
+> [![](https://img.shields.io/twitter/url/https/twitter.com/TheRealMD20M.svg?style=social&label=@TheRealMD20M)](https://x.com/TheRealMD20M)
+
+> **asaff.sol**
+> 
+> ![](https://dcbadge.limes.pink/api/shield/829969665035862046)
+>
+> [![](https://img.shields.io/twitter/url/https/twitter.com/asaf1_2_3.svg?style=social&label=@asaf1_2_3)](https://x.com/asaf1_2_3)
+
+> **Hush**
+> 
+> ![](https://dcbadge.limes.pink/api/shield/669556108846694432)
+>
+> [![](https://img.shields.io/twitter/url/https/twitter.com/GRemdarem.svg?style=social&label=@GRemdarem)](https://x.com/GRemdarem)
