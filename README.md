@@ -64,6 +64,7 @@ This file specifies the Telegram group IDs where the bot will listen for sniping
   GROUP_ID_2
 ]
 ```
+You can find out the ID of the group by checking the link on the telegram page. The numbers at the end represent the channel ID (NOTE: the ID can start with - )
 
 ### 4. Filter Words (filteredWords.json (Optional))
 
