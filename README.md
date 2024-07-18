@@ -23,18 +23,20 @@ This file defines your buying preferences. Open the file with a text editor and 
 
 ```javascript
 {
-  "BUY_AMOUNT": BUY_AMOUNT_IN_SOL,                   //example 1
-  "SLIPPAGE": SLIPPAGE_IN_PERCENTAGE,                //example: 5 (meaning 5%)
-  "PRIORITY_FEE": PRIORITY_FEE_IN_SOL,               //example 0.01
-  "MAX_MARKET_CAP": MAX_MARKETCAP_TO_STILL_BUY,      //example 100000
-  "WALLET_API_KEY": "YOUR_WALLET_API_KEY",      
-  "PUBLIC_KEY": "YOUR_PUBLIC_KEY",
-  "PRIVATE_KEY": "YOUR_PRIVATE_KEY",
-  "AUTO_SELL": "False",                              // set to "True" if you want the bot to automatically sell the token after a set period of time 
-  "AUTO_SELL_HOLD_TIME": TIME_IN_SECONDS,            //example 30
-  "AUTOSELL_RETRY_AMOUNT": MAX_RETRIES_AMOUNT,       //example 25
-  "USE_CUSTOM_RPC": "False",
-  "CUSTOM_RPC_ENDPOINT": "CHANGE TO CUSTOM RPC OR LEAVE EMPTY"
+  "BUY_AMOUNT": BUY_AMOUNT_IN_SOL,                            //example 1.0
+  "SLIPPAGE": SLIPPAGE_IN_PERCENTAGE,                        //example: 5 (meaning 5%)
+  "PRIORITY_FEE": PRIORITY_FEE_IN_SOL,                      //example 0.01
+  "MAX_MARKET_CAP": MAX_MARKETCAP_TO_STILL_BUY,            //example 100000
+  "WALLET_API_KEY": "YOUR_WALLET_API_KEY",                //allows you to use our default RPC you can get this from here: https://sniperbotwebsite.vercel.app/api/generate-wallet Skip this step if you have your own RPC 
+  "PUBLIC_KEY": "YOUR_PUBLIC_KEY",                       // if you want to use the default RPC then fill in the wallet address from the site here, other whise any wallet will work
+  "PRIVATE_KEY": "YOUR_PRIVATE_KEY",                    // if you want to use the default RPC then fill in the wallet address from the site here, other whise any wallet will work
+  "AUTO_SELL": "False",                                // set to "True" if you want the bot to automatically sell the token after a set period of tim, otherwhise set it to "False"
+  "AUTO_SELL_HOLD_TIME": TIME_IN_SECONDS,             //amount of time, in seconds the bot should hold the coin for 
+  "AUTOSELL_RETRY_AMOUNT": MAX_RETRIES_AMOUNT,       //Max amount of times the sell txn should attemtp to sell 
+  "USE_CUSTOM_RPC": "False", // If set to "True" then you must fill in CUSTOM_RPC_ENDPOINT as well, if set to "False" then fill in the WALLET_API_KEY
+  "CUSTOM_RPC_ENDPOINT": "CHANGE TO CUSTOM RPC OR LEAVE EMPTY"// emty as in ""
+  "PREFERRED_POOLS": ["pump","raydium"] // pools that you want the bot to buy - pump for pump, raydium for raydium, if you want the bot to buy both then leave them both in
+  "USE_WEBHOOK":"True"                  // Allows the bot to send a webhook when a buy or a sell happens, if set to "False" it will not post anything. Anonymous.  
 }
 ```
 You can obtain the wallet credentials [here](https://sniperbotwebsite.vercel.app/api/generate-wallet).
@@ -44,7 +46,7 @@ You can obtain the wallet credentials [here](https://sniperbotwebsite.vercel.app
 
 ### 2. Credentials (credentials.json):
 
-This file stores your Telegram API credentials. You can obtain these credentials from the Telegram API (https://my.telegram.org/).
+This file stores your Telegram API credentials. You can obtain these credentials from the Telegram API (https://my.telegram.org/apps).
 
 ```javascript
 {
@@ -58,13 +60,13 @@ This file stores your Telegram API credentials. You can obtain these credentials
 ### 3. Monitored Groups (monitoredGroups.json):
 
 This file specifies the Telegram group IDs where the bot will listen for sniping opportunities. Enter the group IDs you want to monitor, each on a separate line:
+You can get these ID's by either using a telegram bot like [GetMyIDBot](https://t.me/getmy_idbot) or using the command !getid in the Cooper bot discord.
 ```javascript
 [
   GROUP_ID_1,
   GROUP_ID_2
 ]
 ```
-You can find out the ID of the group by checking the link on the telegram page. The numbers at the end represent the channel ID (NOTE: the ID can start with - )
 
 ### 4. Filter Words (filteredWords.json (Optional))
 
