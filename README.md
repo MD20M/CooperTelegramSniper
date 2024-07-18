@@ -37,6 +37,7 @@ This file defines your buying preferences. Open the file with a text editor and 
   "CUSTOM_RPC_ENDPOINT": "CHANGE TO CUSTOM RPC OR LEAVE EMPTY"// emty as in ""
   "PREFERRED_POOLS": ["pump","raydium"] // pools that you want the bot to buy - pump for pump, raydium for raydium, if you want the bot to buy both then leave them both in
   "USE_WEBHOOK":"True"                  // Allows the bot to send a webhook when a buy or a sell happens, if set to "False" it will not post anything. Anonymous.  
+  "CUSTOM_WEBHOOK": "CUSTOM_WEBHOOK"         //leave as is or change with own discord webhook URL 
 }
 ```
 You can obtain the wallet credentials [here](https://sniperbotwebsite.vercel.app/api/generate-wallet).
