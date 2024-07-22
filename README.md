@@ -97,7 +97,8 @@ Type `list` in the console to see all current active trades with their index num
 Use the command `sell <trade_number>`. For example:
 - To sell the first trade: `sell 1`
 - To sell the third trade: `sell 3`
-
+- if there is two trades and you sell one then the one left will be sell 1
+  
 #### Monitor Results
 The bot will attempt to sell the specified trade and provide feedback on the sell operation.
 
