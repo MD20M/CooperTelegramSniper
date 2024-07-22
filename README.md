@@ -86,7 +86,7 @@ In the `buyconfig.json` file, you can control the autosell behavior:
     "AUTO_SELL":"False"
     ...
 }
-````json
+````
 When `AUTO_SELL` is set to `False`, the bot won't automatically sell tokens after a set time period. Instead, you can use the manual sell feature for more control over your trades.
 
 
