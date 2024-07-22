@@ -80,7 +80,7 @@ This file defines keywords the bot will ignore during sniping. The default list 
 ## Manual Sell Feature
 
 In the `buyconfig.json` file, you can control the autosell behavior:
-
+json
 {
     ...
     "AUTO_SELL":"False"
