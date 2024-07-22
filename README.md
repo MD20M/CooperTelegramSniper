@@ -80,13 +80,13 @@ This file defines keywords the bot will ignore during sniping. The default list 
 ## Manual Sell Feature
 
 In the `buyconfig.json` file, you can control the autosell behavior:
-json
+````json
 {
     ...
     "AUTO_SELL":"False"
     ...
 }
-
+````json
 When `AUTO_SELL` is set to `False`, the bot won't automatically sell tokens after a set time period. Instead, you can use the manual sell feature for more control over your trades.
 
 
