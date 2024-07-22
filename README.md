@@ -76,6 +76,34 @@ This file defines keywords the bot will ignore during sniping. The default list 
 ["scam", "rug", "honeypot", "presale", "trash", "sniper", "dont", "buy", "snipe"]
 ```
 
+
+## Manual Sell Feature
+
+In the `buyconfig.json` file, you can control the autosell behavior:
+
+{
+    ...
+    "AUTO_SELL":"False"
+    ...
+}
+
+When `AUTO_SELL` is set to `False`, the bot won't automatically sell tokens after a set time period. Instead, you can use the manual sell feature for more control over your trades.
+
+
+#### View Active Trades
+Type `list` in the console to see all current active trades with their index numbers.
+
+#### Sell a Specific Trade
+Use the command `sell <trade_number>`. For example:
+- To sell the first trade: `sell 1`
+- To sell the third trade: `sell 3`
+
+#### Monitor Results
+The bot will attempt to sell the specified trade and provide feedback on the sell operation.
+
+#### Trade Removal
+Successfully sold trades are automatically removed from the active trades list.
+
 ## Running the Bot:
 
 1. Double-click "Cooper Telegram Sniper.exe" to start the bot.
