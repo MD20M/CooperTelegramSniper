@@ -30,7 +30,7 @@ This file defines your buying preferences. Open the file with a text editor and 
   "WALLET_API_KEY": "YOUR_WALLET_API_KEY",                //allows you to use our default RPC you can get this from here: https://sniperbotwebsite.vercel.app/api/generate-wallet Skip this step if you have your own RPC 
   "PUBLIC_KEY": "YOUR_PUBLIC_KEY",                       // if you want to use the default RPC then fill in the wallet address from the site here, other whise any wallet will work
   "PRIVATE_KEY": "YOUR_PRIVATE_KEY",                    // if you want to use the default RPC then fill in the wallet address from the site here, other whise any wallet will work
-  "AUTO_SELL": "False",                                // set to "True" if you want the bot to automatically sell the token after a set period of tim, otherwhise set it to "False"
+  "AUTO_SELL": "False",                                // set to "True" if you want the bot to automatically sell the token after a set period of tim, otherwhise set it to "False" --NOTE: **Please set AUTO_SELL_HOLD_TIME and AUTOSELL_RETRY_AMOUNT to a number or the bot wont run otherwhise!**
   "AUTO_SELL_HOLD_TIME": TIME_IN_SECONDS,             //amount of time, in seconds the bot should hold the coin for 
   "AUTOSELL_RETRY_AMOUNT": MAX_RETRIES_AMOUNT,       //Max amount of times the sell txn should attemtp to sell 
   "USE_CUSTOM_RPC": "False", // If set to "True" then you must fill in CUSTOM_RPC_ENDPOINT as well, if set to "False" then fill in the WALLET_API_KEY
