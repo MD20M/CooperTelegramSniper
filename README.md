@@ -40,6 +40,7 @@ This file defines your buying preferences. Open the file with a text editor and 
   "CUSTOM_WEBHOOK": "CUSTOM_WEBHOOK"         //leave as is or change with own discord webhook URL 
 }
 ```
+--NOTE: **Please set AUTO_SELL_HOLD_TIME and AUTOSELL_RETRY_AMOUNT to a number or the bot wont run otherwhise!**
 You can obtain the wallet credentials [here](https://sniperbotwebsite.vercel.app/api/generate-wallet).
 > [!NOTE]
 > We do not save any informations about wallets that get generated here.
