@@ -65,7 +65,7 @@ This file stores your Telegram API credentials. You can obtain these credentials
 
 This file specifies the Telegram group IDs where the bot will listen for sniping opportunities. Enter the group IDs you want to monitor, each on a separate line. You can get these IDs by either using a Telegram bot like [GetMyIDBot](https://t.me/getmy_idbot) or using the command `!getid` in the Cooper bot Discord.
 
-```json
+```
 [
   GROUP_ID_1,
   GROUP_ID_2
