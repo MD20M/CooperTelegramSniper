@@ -22,7 +22,7 @@ The bot uses several JSON configuration files. You'll need to fill in the detail
 
 This file defines your buying preferences. Open the file with a text editor and replace the placeholders with your values:
 
-```json
+```
 {
   "BUY_AMOUNT": BUY_AMOUNT_IN_SOL,  #example 1.0
   "SLIPPAGE": SLIPPAGE_IN_PERCENTAGE,  #example: 5 (meaning 5%)
