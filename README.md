@@ -52,7 +52,7 @@ You can obtain the wallet credentials [here](https://sniperbotwebsite.vercel.app
 
 This file stores your Telegram API credentials. You can obtain these credentials from the Telegram API [here](https://my.telegram.org/apps).
 
-```json
+```
 {
   "API_ID": YOUR_API_ID,             //make sure to leave as a number
   "API_HASH": "YOUR_API_HASH"
@@ -76,15 +76,24 @@ This file specifies the Telegram group IDs where the bot will listen for sniping
 
 This file defines keywords the bot will ignore during sniping. The default list includes words like "scam," "rug," and "presale." To add custom words, open the file and add them to the list:
 
-```json
+```
 ["scam", "rug", "honeypot", "presale", "trash", "sniper", "dont", "buy", "snipe"]
 ```
 
 ### Custom Group Settings
+When opening the bot you will be promted with:
+
+```
+Choose an option:
+1. Start the bot
+2. Add a new group
+Enter 1 or 2:
+```
+IF you choose 2 you will be promted for a group id, which, once you fill you will have tto fill in the custom group file
 
 For each monitored group, you can create a separate settings file named `group_settings_<GROUP_ID>.json`. This allows you to specify custom settings for each group.
 
-```json
+```
 {
   "BUY_AMOUNT": CUSTOM_BUY_AMOUNT,
   "SLIPPAGE": CUSTOM_SLIPPAGE,
