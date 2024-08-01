@@ -167,4 +167,4 @@ You should be able to run the bot on macOS by using [WineBottler](https://winebo
 
 > **How can I get the APP key?**
 
-You can get one by applying for beta in the [form on our website](https://sniperbotwebsite.vercel.app/api/generate-wallet) and then messaging our admins on [Discord](https://discord.gg/link) with proof that you have filled it out.
+You can optain your APP key by opening a ticket in the Cooper Bot discord server (as long as you have beta 😜)
