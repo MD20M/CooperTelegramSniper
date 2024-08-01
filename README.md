@@ -114,7 +114,7 @@ For each monitored group, you can create a separate settings file named `group_s
 
 In the `buy_config.json` file, you can control the autosell behavior:
 
-```json
+```
 {
   // REST OF BUYCONFIG
   "AUTO_SELL": "False"
