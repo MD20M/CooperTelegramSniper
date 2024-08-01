@@ -24,21 +24,21 @@ This file defines your buying preferences. Open the file with a text editor and 
 
 ```json
 {
-  "BUY_AMOUNT": BUY_AMOUNT_IN_SOL,  //example 1.0
-  "SLIPPAGE": SLIPPAGE_IN_PERCENTAGE,  //example: 5 (meaning 5%)
-  "PRIORITY_FEE": PRIORITY_FEE_IN_SOL,   //example 0.01
-  "MAX_MARKET_CAP": MAX_MARKETCAP_TO_STILL_BUY,    //example 100000
-  "WALLET_API_KEY": "YOUR_WALLET_API_KEY",//allows you to use our default RPC you can get this from here: https://sniperbotwebsite.vercel.app/api/generate-wallet Skip this step if you have your own RPC 
-  "PUBLIC_KEY": "YOUR_PUBLIC_KEY",  // if you want to use the default RPC then fill in the wallet address from the site here, otherwise any wallet will work
-  "PRIVATE_KEY": "YOUR_PRIVATE_KEY",   // if you want to use the default RPC then fill in the wallet address from the site here, otherwise any wallet will work
-  "AUTO_SELL": "False",          // set to "True" if you want the bot to automatically sell the token after a set period of time, otherwise set it to "False" --NOTE: **Please set AUTO_SELL_HOLD_TIME and AUTOSELL_RETRY_AMOUNT to a number or the bot won't run otherwise!**
-  "AUTO_SELL_HOLD_TIME": TIME_IN_SECONDS, //amount of time, in seconds the bot should hold the coin for 
-  "AUTOSELL_RETRY_AMOUNT": MAX_RETRIES_AMOUNT, //Max amount of times the sell txn should attempt to sell 
-  "USE_CUSTOM_RPC": "False", // If set to "True" then you must fill in CUSTOM_RPC_ENDPOINT as well, if set to "False" then fill in the WALLET_API_KEY
+  "BUY_AMOUNT": BUY_AMOUNT_IN_SOL,  #example 1.0
+  "SLIPPAGE": SLIPPAGE_IN_PERCENTAGE,  #example: 5 (meaning 5%)
+  "PRIORITY_FEE": PRIORITY_FEE_IN_SOL,   #example 0.01
+  "MAX_MARKET_CAP": MAX_MARKETCAP_TO_STILL_BUY,    #example 100000
+  "WALLET_API_KEY": "YOUR_WALLET_API_KEY", # allows you to use our default RPC you can get this from here: https://sniperbotwebsite.vercel.app/api/generate-wallet Skip this step if you have your own RPC 
+  "PUBLIC_KEY": "YOUR_PUBLIC_KEY",  # if you want to use the default RPC then fill in the wallet address from the site here, otherwise any wallet will work
+  "PRIVATE_KEY": "YOUR_PRIVATE_KEY",   # if you want to use the default RPC then fill in the wallet address from the site here, otherwise any wallet will work
+  "AUTO_SELL": "False",          # set to "True" if you want the bot to automatically sell the token after a set period of time, otherwise set it to "False" --NOTE: **Please set AUTO_SELL_HOLD_TIME and AUTOSELL_RETRY_AMOUNT to a number or the bot won't run otherwise!**
+  "AUTO_SELL_HOLD_TIME": TIME_IN_SECONDS, #amount of time, in seconds the bot should hold the coin for 
+  "AUTOSELL_RETRY_AMOUNT": MAX_RETRIES_AMOUNT, #Max amount of times the sell txn should attempt to sell 
+  "USE_CUSTOM_RPC": "False", # If set to "True" then you must fill in CUSTOM_RPC_ENDPOINT as well, if set to "False" then fill in the WALLET_API_KEY
   "CUSTOM_RPC_ENDPOINT": "CHANGE TO CUSTOM RPC OR LEAVE EMPTY"// empty as in ""
   "PREFERRED_POOLS": ["pump","raydium"], // pools that you want the bot to buy - pump for pump, raydium for raydium, if you want the bot to buy both then leave them both in
-  "USE_WEBHOOK":"True", // Allows the bot to send a webhook when a buy or a sell happens, if set to "False" it will not post anything. Anonymous.  
-  "CUSTOM_WEBHOOK": "CUSTOM_WEBHOOK" //leave as is or change with own discord webhook URL 
+  "USE_WEBHOOK":"True", # Allows the bot to send a webhook when a buy or a sell happens, if set to "False" it will not post anything. Anonymous.  
+  "CUSTOM_WEBHOOK": "CUSTOM_WEBHOOK" #leave as is or change with own discord webhook URL 
 }
 ```
 
