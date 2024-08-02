@@ -1,5 +1,5 @@
 
-# Cooper Telegram SniperA
+# Cooper Telegram Sniper
 
 The Cooper Telegram Sniper is a bot that snipes tokens in desired Telegram channels.
 
