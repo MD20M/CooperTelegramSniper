@@ -24,7 +24,7 @@ This file defines your buying preferences. Open the file with a text editor and 
 
 ```
 {
-  "BUY_AMOUNT": BUY_AMOUNT_IN_SOL, //#example 1.0
+  "BUY_AMOUNT": BUY_AMOUNT_IN_SOL, //example 1.0
   "SLIPPAGE": SLIPPAGE_IN_PERCENTAGE,  //example: 5 (meaning 5%)
   "PRIORITY_FEE": PRIORITY_FEE_IN_SOL,   //example 0.01
   "MAX_MARKET_CAP": MAX_MARKETCAP_TO_STILL_BUY,    //example 100000
