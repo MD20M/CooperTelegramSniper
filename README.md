@@ -86,7 +86,7 @@ When opening the bot you will be promted with:
 
 ```
 When opening the bot, you will be greated with a menu
- <img src="https://github.com/user-attachments/assets/da9304f3-905e-49a9-a96a-32c4eed1f731" alt="External Image">
+![image](https://github.com/user-attachments/assets/25ad6f30-d266-4884-8a15-1f24c2bc425a)
 
 
 Enter 2 to open up the custom group settings.:
