@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/25ad6f30-d266-4884-8a15-1f24c2bc425a)
 
 # Cooper Telegram Sniper
 
