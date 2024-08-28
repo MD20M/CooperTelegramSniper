@@ -87,7 +87,6 @@ When opening the bot you will be promted with:
 
 ```
 When opening the bot, you will be greated with a menu
-![image](https://github.com/user-attachments/assets/25ad6f30-d266-4884-8a15-1f24c2bc425a)
 
 
 Enter 2 to open up the custom group settings.:
