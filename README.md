@@ -38,7 +38,8 @@ This file defines your buying preferences. Open the file with a text editor and 
   "CUSTOM_RPC_ENDPOINT": "CHANGE TO CUSTOM RPC OR LEAVE EMPTY"// empty as in ""
   "PREFERRED_POOLS": ["pump","raydium"], // pools that you want the bot to buy - pump for pump, raydium for raydium, if you want the bot to buy both then leave them both in
   "USE_WEBHOOK":"True", // Allows the bot to send a webhook when a buy or a sell happens, if set to "False" it will not post anything. Anonymous.  
-  "CUSTOM_WEBHOOK": "CUSTOM_WEBHOOK" // leave as is or change with own discord webhook URL 
+  "CUSTOM_WEBHOOK": "CUSTOM_WEBHOOK" // leave as is or change with own discord webhook URL
+  "BUY_TWICE": "True" // If left on True, will buy tokens more then once. 
 }
 ```
 
@@ -84,29 +85,37 @@ This file defines keywords the bot will ignore during sniping. The default list 
 When opening the bot you will be promted with:
 
 ```
-Choose an option:
-1. Start the bot
-2. Add a new group
-Enter 1 or 2:
+When opening the bot, you will be greated with a menu
+![image](https://github.com/user-attachments/assets/da9304f3-905e-49a9-a96a-32c4eed1f731)
+
+Enter 2 to open up the custom group settings.:
 ```
 IF you choose 2 you will be promted for a group id, which, once you fill you will have tto fill in the custom group file
 
-For each monitored group, you can create a separate settings file named `group_settings_<GROUP_ID>.json`. This allows you to specify custom settings for each group.
+For each monitored group, the bot will create a separate settings file named `group_settings_<GROUP_ID>.json`. This allows you to specify custom settings for each group.
 
 ```
 {
-  "BUY_AMOUNT": CUSTOM_BUY_AMOUNT,
-  "SLIPPAGE": CUSTOM_SLIPPAGE,
-  "PRIORITY_FEE": CUSTOM_PRIORITY_FEE,
-  "MAX_MARKET_CAP": CUSTOM_MAX_MARKETCAP_TO_STILL_BUY,
-  "AUTO_SELL": "False",
-  "AUTO_SELL_HOLD_TIME": CUSTOM_TIME_IN_SECONDS,
-  "AUTOSELL_RETRY_AMOUNT": CUSTOM_MAX_RETRIES_AMOUNT,
-  "USE_CUSTOM_RPC": "False",
-  "CUSTOM_RPC_ENDPOINT": "CHANGE TO CUSTOM RPC OR LEAVE EMPTY",
-  "PREFERRED_POOLS": ["pump", "raydium"],
-  "USE_WEBHOOK": "True",
-  "CUSTOM_WEBHOOK": "CUSTOM_WEBHOOK"
+  "BUY_AMOUNT": BUY_AMOUNT_IN_SOL, //example 1.0
+  "SLIPPAGE": SLIPPAGE_IN_PERCENTAGE,  //example: 5 (meaning 5%)
+  "PRIORITY_FEE": PRIORITY_FEE_IN_SOL,   //example 0.01
+  "MAX_MARKET_CAP": MAX_MARKETCAP_TO_STILL_BUY,    //example 100000
+  "WALLET_API_KEY": "YOUR_WALLET_API_KEY", // allows you to use our default RPC you can get this from here: https://sniperbotwebsite.vercel.app/api/generate-wallet Skip this step if you have your own RPC 
+  "PUBLIC_KEY": "YOUR_PUBLIC_KEY",  // if you want to use the default RPC then fill in the wallet address from the site here, otherwise any wallet will work
+  "PRIVATE_KEY": "YOUR_PRIVATE_KEY",   // if you want to use the default RPC then fill in the wallet address from the site here, otherwise any wallet will work
+  "AUTO_SELL": "False",          // set to "True" if you want the bot to automatically sell the token after a set period of time, otherwise set it to "False" --NOTE: **Please set AUTO_SELL_HOLD_TIME and AUTOSELL_RETRY_AMOUNT to a number or the bot won't run otherwise!**
+  "AUTO_SELL_HOLD_TIME": TIME_IN_SECONDS, // amount of time, in seconds the bot should hold the coin for 
+  "AUTOSELL_RETRY_AMOUNT": MAX_RETRIES_AMOUNT, // Max amount of times the sell txn should attempt to sell 
+  "USE_CUSTOM_RPC": "False", // If set to "True" then you must fill in CUSTOM_RPC_ENDPOINT as well, if set to "False" then fill in the WALLET_API_KEY
+  "CUSTOM_RPC_ENDPOINT": "CHANGE TO CUSTOM RPC OR LEAVE EMPTY"// empty as in ""
+  "PREFERRED_POOLS": ["pump","raydium"], // pools that you want the bot to buy - pump for pump, raydium for raydium, if you want the bot to buy both then leave them both in
+  "USE_WEBHOOK":"True", // Allows the bot to send a webhook when a buy or a sell happens, if set to "False" it will not post anything. Anonymous.  
+  "CUSTOM_WEBHOOK": "CUSTOM_WEBHOOK" // leave as is or change with own discord webhook URL
+  "BUY_TWICE": "True" // If left on True, will buy tokens more then once.
+  "WHITELIST": [] // If left blank, will buy from any memeber of a group, if filled in, will ignore any other messages, besides the ones in the ones in the WHITELIST. To get the id of a user, feel free to use the /getid command in the Cooper discord. Syntax: [ID1,ID2]
+
+  
+   
 }
 ```
 
@@ -129,10 +138,10 @@ Type `list` in the console to see all current active trades with their index num
 
 #### Sell a Specific Trade
 
-Use the command `sell <trade_number>`. For example:
+Use the command `sell <trade_number> [Sell amount (%)`. For example:
 
-- To sell the first trade: `sell 1`
-- To sell the third trade: `sell 3`
+- To sell the first trade: `sell 1 50`
+- To sell the third trade: `sell 3 35`
 - If there are two trades and you sell one, the remaining one will be `sell 1`
 
 #### Monitor Results
@@ -154,6 +163,10 @@ Successfully sold trades are automatically removed from the active trades list.
 ### Additional Features
 
 The bot also automatically generates a `transaction_stats.json` file to track transaction success, failure, and profit/loss of the bot.
+Wallet Manager **Spread, create, claim, view balance etc**
+Report suggestions/issues through the CLI.
+24/7 Support.
+
 
 ## FAQ
 
