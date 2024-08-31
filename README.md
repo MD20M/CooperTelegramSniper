@@ -119,6 +119,35 @@ For each monitored group, the bot will create a separate settings file named `gr
    
 }
 ```
+## Take profit and stop loss
+
+``` 
+When using custom group settings another option you will have is a take profit and stol loss
+How it works:
+```json
+ "TP_SL": {
+        "Active": "True",
+        "TPs": [
+            [
+                100,
+                100
+            ]
+            [
+               50,
+               1000
+            ]
+        ],
+        "SLs": [
+            [
+                100,
+                -20
+            ]
+        ]
+    }
+```
+[AMOUNT TO SELL, WHEN TO SELL] // Amount to sell (in %) when you reach the target tp sell this amount, When to sell (in %) How high the position needs to be up (or down  to sell the amount)
+You can create as many take profits and stop losses, just make sure to keep with the correct syntax 
+
 
 ### Manual Sell Feature
 
@@ -139,10 +168,10 @@ Type `list` in the console to see all current active trades with their index num
 
 #### Sell a Specific Trade
 
-Use the command `sell <trade_number> [Sell amount (%)`. For example:
+Use the command `sell <trade_number>`. For example:
 
-- To sell the first trade: `sell 1 50`
-- To sell the third trade: `sell 3 35`
+- To sell the first trade: `sell 1 `
+- To sell the third trade: `sell 3`
 - If there are two trades and you sell one, the remaining one will be `sell 1`
 
 #### Monitor Results
@@ -166,6 +195,7 @@ Successfully sold trades are automatically removed from the active trades list.
 The bot also automatically generates a `transaction_stats.json` file to track transaction success, failure, and profit/loss of the bot.
 Wallet Manager **Spread, create, claim, view balance etc**
 Report suggestions/issues through the CLI.
+Notifications - Custom Webhooks
 24/7 Support.
 
 
