@@ -121,7 +121,7 @@ For each monitored group, the bot will create a separate settings file named `gr
 ```
 ## Take profit and stop loss
 
-``` 
+ 
 When using custom group settings another option you will have is a take profit and stol loss
 How it works:
 ```json
